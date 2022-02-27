@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918e9b;
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+section {
+  padding: 20px;
+  width: 70vw;
+}
+
+.hero {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+
+  background-image: url(./Frame\ 2@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* flex-direction: column; */
+  max-width: 50%;
+
+  height: 400px;
+}
+
+.hero--header {
+  margin-bottom: 16px;
+  margin-top: 420px;
+  text-align: center;
+}
+
+.hero--text {
+  margin-top: 0;
+  text-align: center;
+}
+
+.cards-list {
+  margin-top: 160px;
+  margin-left: 24%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: nowrap;
+  gap: 5px;
+  overflow-x: auto;
+}
+
+.card {
+  width: 175px;
+  /* height: 220px; */
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  height: 14px;
+  color: red;
+}
+
+/* ADD */
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
